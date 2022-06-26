@@ -136,7 +136,7 @@ if game.PlaceId == 9551640993 then
         if _G.EggCount == true then
             local EggsCountEmbed = {
             	["name"] = "Egg Count Data",
-            	["value"] = abb(count1) .. " Eggs have been hatched! | *+" .. abb(EggsHatchedPer1) .. " in **"..formattedtime.."**",
+            	["value"] = abb(count1) .. " Eggs have been hatched! | *+" .. abb(EggsHatchedPer1) .. " in "..formattedtime.."*",
             	["inline"] = false
         	    }
             	table.insert(msg["embeds"][1]["fields"], EggsCountEmbed)
@@ -144,7 +144,7 @@ if game.PlaceId == 9551640993 then
 	    if _G.RebirthCount == true then
 	        local RebirthsCountEmbed = {
 	            ["name"] = "Rebirth Count Data",
-				["value"] = abb(count22) .. " Rebirths have been counted! | *+" .. abb(RebirthsPer1) .. " in **"..formattedtime.."**",
+				["value"] = abb(count22) .. " Rebirths have been counted! | *+" .. abb(RebirthsPer1) .. " in "..formattedtime.."*",
 				["inline"] = false
 	            }
 	            table.insert(msg["embeds"][1]["fields"], RebirthsCountEmbed)
@@ -152,7 +152,7 @@ if game.PlaceId == 9551640993 then
 	    if _G.BlocksCount == true then
 	        local BlocksCountEmbed = {
 	            ["name"] = "Block Count Data",
-				["value"] = abb(count33) .. " Blocks have been mined! | *+" .. abb(BlocksPer1) .. " in **"..formattedtime.."**",
+				["value"] = abb(count33) .. " Blocks have been mined! | *+" .. abb(BlocksPer1) .. " in "..formattedtime.."*",
 				["inline"] = false
 	            }
 	            table.insert(msg["embeds"][1]["fields"], BlocksCountEmbed)
