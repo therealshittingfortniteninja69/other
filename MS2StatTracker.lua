@@ -2,6 +2,9 @@ if game.PlaceId == 9551640993 then
 	local username = game:GetService("Players").LocalPlayer.Name
 	local userid = game:GetService("Players").LocalPlayer.UserId
 	local icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..userid.."&width=420&height=420&format=png"
+	if _G.Player then
+	    icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players[_G.Player].UserId.."&width=420&height=420&format=png"
+	end
 	local FormatTime = require(game.ReplicatedStorage.ClientModules.Utility.Gui.FormatTime)
 	local NewColor = (_G.Color == "" and "fffff") or _G.Color
 	local number = 1
@@ -116,7 +119,7 @@ if game.PlaceId == 9551640993 then
         local msg = {
             ["embeds"] = {
                 {
-                    ["title"] = username .. "'s MS2 Stat Data",
+                    ["title"] = _G.Player or username .. "'s MS2 Stat Data",
                     ["color"] = tonumber(tostring("0x" .. NewColor)),
                     ["description"] = "Some of these stats wont be exact. Some are just estimates",
                     ["thumbnail"] = {
