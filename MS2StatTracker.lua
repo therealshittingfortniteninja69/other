@@ -5,7 +5,7 @@ if game.PlaceId == 9551640993 then
 	if _G.Player then
 	    icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players[_G.Player].UserId.."&width=420&height=420&format=png"
 	end
-	local FormatTime = require(game.ReplicatedStorage.ClientModules.Utility.Gui.FormatTime)
+	local FormatTime = require(game.ReplicatedStorage.SharedModules.Helpers.FormatTime)
 	local NewColor = (_G.Color == "" and "fffff") or _G.Color
 	local number = 1
 	local number2 = 1
